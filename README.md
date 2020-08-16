@@ -1,3 +1,3 @@
-#AEHI 2.0 
 
-[AEHI 2.0](github.io/castlemaninc/aehi2)
+
+[AEHI 2.0](https://castlemaninc.github.io/aehi2)
