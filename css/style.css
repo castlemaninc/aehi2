@@ -1,0 +1,91 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #616161;
+}
+
+.sidenav .metals-mobile-links li>a  {
+  padding-left: 50px;
+}
+
+#our-company-h5, #products-h5, #services-h5 {
+  padding-left:20px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.logo-responsive {    
+  width: auto;
+  max-height: 56px;  
+}
+
+.sidebar-logo {
+  max-height: 80px;
+  width: auto;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+}
+
+@media only screen and (min-width: 601px){
+  .logo-responsive {
+      width: auto;
+      max-height: 64px;
+      margin-left:40px;
+  }    
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
