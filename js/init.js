@@ -9,5 +9,7 @@
       $(".metals-mobile-links").toggle(500);
     });
 
+    $('.dropdown-trigger').dropdown();
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space

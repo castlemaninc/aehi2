@@ -2,31 +2,84 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+p {
+  line-height: 2rem;
+}
+
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Lato', sans-serif;
 }
 
+address {
+  font-style: normal;
+}
 
+nav ul a {
+  padding: 0px 20px 0px 20px;
+}
+
+nav ul a:hover {
+  background-color: #bbdefb;
+}
 
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
 
-p {
-  line-height: 2rem;
+.dropdown-content {
+  min-width: 130px;
+  width: auto;
 }
+
+.dropdown-content li>a {
+  font-size: 14px;
+  color: #444;
+}
+
+
 
 .sidenav-trigger {
   color: #616161;
+}
+
+.sidenav li>a:hover {
+  background-color: #9cf;
 }
 
 .sidenav .metals-mobile-links li>a  {
   padding-left: 50px;
 }
 
+.bread {
+  margin-top:10px;
+  font-size: 12px;
+}
+
+.breadcrumb {
+  color: #444;
+  font-size: 15px;
+}
+
+.breadcrumb::before {
+  color: #444;
+}
+
+a.breadcrumb::before {
+  margin: 2px 10px 0px 8px;
+}
+
+.breadcrumb:last-child {
+  color: #039be5;
+}
+
 #our-company-h5, #products-h5, #services-h5 {
   padding-left:20px;
+}
+
+.main-container {  
+  margin: 0 40px 0 40px;
 }
 
 .parallax-container {
@@ -45,7 +98,7 @@ p {
 }
 
 .sidebar-logo {
-  max-height: 80px;
+  max-height: 60px;
   width: auto;
   display: block;
   margin: auto;
@@ -60,11 +113,19 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+  .main-container {
+    margin: 0 20px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+
+  .main-container {
+    margin: 0 10px;
   }
 
 }
@@ -74,7 +135,9 @@ p {
       width: auto;
       max-height: 64px;
       margin-left:40px;
-  }    
+  }
+  
+  
 }
 
 

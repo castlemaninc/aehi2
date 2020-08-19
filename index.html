@@ -22,25 +22,50 @@
 
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <!--Navigation-->
+  <nav class="white" role="navigation" id="top">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="img/aehi-logo.png" class="logo-responsive"></a>
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="img/aehi-logo.png" class="logo-responsive"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Our Company</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="contact.html" class="btn-small waves-effect waves-light blue lighten-1">Contact Us</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='our-company-dropdown'>Our Company</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='products-dropdown'>Products</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='services-dropdown'>Services</a></li>
+        <li><a href='contact.html'>Contact Us</a></li>       
+      </ul>
+
+      <!-- Our Company Dropdown-->
+      <ul id='our-company-dropdown' class='dropdown-content'>
+        <li><a href="our-company/about-us.html">About Us</a></li>
+        <li><a href="our-company/management.html">Management</a></li>
+        <li><a href="our-company/quality.html">Quality</a></li>        
+      </ul>
+
+      <!-- Products Dropdown-->
+      <ul id='products-dropdown' class='dropdown-content'>
+        <li><a href="#!">Metals</a></li>
+        <li><a href="products/chemicals-and-composites.html">Composites & Chemicals</a></li>
+        <li><a href="products/standard-hardware.html">Standard Hardware</a></li>
+        <li><a href="products/metallurgical-material.html">Metallurgical Material</a></li>   
+        <li><a href="products/honeycomb.html">Honeycomb</a></li>
+        <li><a href="products/broaching.html">Broaching</a></li>  
+        <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>             
+      </ul>
+
+      <!-- Services Dropdown-->
+      <ul id='services-dropdown' class='dropdown-content'>
+        <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
+        <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>
+        <li><a href="services/value-added-services.html">Value Added Services</a></li>        
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <img src="img/aehi-inc-logo-large.jpg" class="sidebar-logo">
-            <h5 id="our-company-h5" class="grey-text text-darken-2">Our Company</h5>
-                <li class="divider"></li> 
+            <h5 id="our-company-h5" class="grey-text text-darken-2">Our Company</h5>                
                 <li><a href="our-company/about-us.html">About Us</a></li>
                 <li><a href="our-company/management.html">Management</a></li>
                 <li><a href="our-company/quality.html">Quality</a></li>
-            <h5 id="products-h5" class="grey-text text-darken-2">Products</h5>
-                <li class="divider"></li> 
+
+            <h5 id="products-h5" class="grey-text text-darken-2">Products</h5>                
                 <li><a href="#!" id="metals-link-mobile">Metals</a></li>
                     <ul class="metals-mobile-links">
                         <li><a href="products/metals/super-alloy.html">Super Alloy</a></li>
@@ -50,16 +75,16 @@
                         <li><a href="products/metals/aluminum-alloy.html">Aluminum Alloy</a></li>
                         <li><a href="products/metals/copper-and-bronze-alloy.html">Copper Alloy</a></li>
                         <li><a href="products/metals/forging.html">Forging</a></li>
-                    </ul>                 
+                    </ul>            
                                 
-                <li><a href="products/composites-and-chemicals.html">Composites & Chemicals</a></li>                    
+                <li><a href="products/chemicals-and-composites.html">Composites & Chemicals</a></li>                    
                 <li><a href="products/standard-hardware.html">Standard Hardware</a></li>
                 <li><a href="products/metallurgical-material.html">Metallurgical Material</a></li>
                 <li><a href="products/honeycomb.html">Honeycomb</a></li>
                 <li><a href="products/broaching.html">Broaching</a></li>
                 <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>
-            <h5 id="services-h5" class="grey-text text-darken-2">Services</h5>
-                <li class="divider"></li>
+
+            <h5 id="services-h5" class="grey-text text-darken-2">Services</h5>                
                 <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
                 <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>                  
                 <li><a href="services/value-added-services.html">Value Added Services</a></li>
@@ -68,135 +93,185 @@
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center blue-text text-lighten-2">Integrated Supplier of Aviation Materials.</h1>
-        <div class="row center">
-          <h5 class="header col s12 light"></h5>
-        </div>
-        <div class="row center">
-          <a href="#!" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">See Products</a>
-        </div>
-        <br><br>
+  <!--Main Section-->
+  <section class="row">
+    <div class="main-container">
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center blue-text text-lighten-2">Integrated Supplier of Aviation Materials.</h1>
+            <div class="row center">
+              <h5 class="header col s12 light"></h5>
+            </div>
+            <div class="row center">
+              <a href="#!" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">See Products</a>
+            </div>
+            <br><br>
 
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center grey-text"><i class="material-icons">airplanemode_active</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo inventore dolor qui iure voluptatibus, ad obcaecati consequatur id ab ut quas excepturi cupiditate, alias provident similique architecto cumque odit?</p>
           </div>
         </div>
+        <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+      </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center grey-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
 
-            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus iure harum explicabo adipisci necessitatibus deserunt id quo quidem? Fuga omnis vel magnam id dolorum. Quidem ea voluptatem distinctio quo?</p>
+      <div class="container">
+        <div class="section">
+
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center grey-text"><i class="material-icons">airplanemode_active</i></h2>
+                <h5 class="center">Speeds up development</h5>
+
+                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo inventore dolor qui iure voluptatibus, ad obcaecati consequatur id ab ut quas excepturi cupiditate, alias provident similique architecto cumque odit?</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center grey-text"><i class="material-icons">group</i></h2>
+                <h5 class="center">User Experience Focused</h5>
+
+                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus iure harum explicabo adipisci necessitatibus deserunt id quo quidem? Fuga omnis vel magnam id dolorum. Quidem ea voluptatem distinctio quo?</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center grey-text"><i class="material-icons">settings</i></h2>
+                <h5 class="center">Easy to work with</h5>
+
+                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique porro fuga, doloribus molestias quos? Optio cupiditate commodi consequuntur voluptatem, molestiae quis, autem veritatis tenetur quo quas praesentium itaque sint.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+              <h5 class="header col s12 light">Blah Blah Blah</h5>
+            </div>
           </div>
         </div>
+        <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+      </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center grey-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+      <div class="container">
+        <div class="section">
 
-            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique porro fuga, doloribus molestias quos? Optio cupiditate commodi consequuntur voluptatem, molestiae quis, autem veritatis tenetur quo quas praesentium itaque sint.</p>
+          <div class="row">
+            <div class="col s12 center">
+              <h3><i class="mdi-content-send brown-text"></i></h3>
+              <h4>About Us</h4>
+              <p class="left-align light">AEHI, Inc. is well recognized around the world as an integrated supplier of aviation materials such as raw and semi-finished metal materials and products, standard hardware, consumables, chemicals as well as composites to the aerospace industry, OEMs, MROs and airlines.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+              <h5 class="header col s12 light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolorum esse ex, voluptas repellat quos odio porro labore inventore culpa placeat aliquid voluptate harum atque vero quisquam pariatur sunt adipisci.</h5>
+            </div>
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Blah Blah Blah</h5>
-        </div>
+        <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>About Us</h4>
-          <p class="left-align light">AEHI, Inc. is well recognized around the world as an integrated supplier of aviation materials such as raw and semi-finished metal materials and products, standard hardware, consumables, chemicals as well as composites to the aerospace industry, OEMs, MROs and airlines.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolorum esse ex, voluptas repellat quos odio porro labore inventore culpa placeat aliquid voluptate harum atque vero quisquam pariatur sunt adipisci.</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
+  <!--FOOTER-->
   <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h6 class="white-text">AEHI, Inc.</h6>
-          <p class="grey-text text-lighten-4">DBA Eagle-High International</p>
-          <address>15298 El Prado Road<br>Chino, California 91710, US</address>
+        <div class="col l3 s12">
           <ul>
-            <li><a class="grey-text text-lighten-3" href="https://goo.gl/maps/juKvSHMzn6HGmBDN7" target="_blank">Get Directions  <i class="material-icons tiny">directions_car</i></a></li>
+            <a href="https://goo.gl/maps/juKvSHMzn6HGmBDN7" target="_blank">
+              <address class="grey-text text-lighten-1">
+                <h6 class="grey-text text-lighten-2">AEHI, Inc.</h6>
+                15298 El Prado Road
+                <br>
+                Chino, California 91710, US
+              </address>                      
+            </a>                  
+            <li><a class="grey-text text-lighten-1" href="https://goo.gl/maps/juKvSHMzn6HGmBDN7" target="_blank">Get Directions  <i class="material-icons tiny">directions_car</i></a></li>
+            <br>          
+            <li><a class="grey-text text-lighten-1" href="contact.html">Contact Us <i class="material-icons tiny">open_in_new</i></a></li>
           </ul>
+        </div>
 
+        <div class="col l3 s12">
+          <h6 class="grey-text text-lighten-2">Our Company</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-1" href="our-company/about-us.html">About Us</a></li>
+            <li><a class="grey-text text-lighten-1" href="our-company/management.html">Management</a></li>
+            <li><a class="grey-text text-lighten-1" href="our-company/quality.html">Quality</a></li>
+          </ul>
+          <h6 class="grey-text text-lighten-2">Services</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-1" href="services/supply-chain-management.html">Supply Chain Management</a></li>
+            <li><a class="grey-text text-lighten-1" href="services/custom-machining-services.html">Custom Machining Services</a></li>
+            <li><a class="grey-text text-lighten-1" href="services/value-added-services.html">Value Added Services</a></li>
+          </ul>
+        </div>
 
+        <div class="col l3 s12">
+          <h6 class="grey-text text-lighten-2">Products</h6>
+          <ul>            
+            <li><a class="grey-text text-lighten-1" href="products/chemicals-and-composites.html">Chemicals & Composites</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/standard-hardware.html">Standard Hardware</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metallurgical-material.html">Metallurgical Materials</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/honeycomb.html">Honeycomb</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/broaching.html">Broaching</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>                        
+          </ul>
+          <h6 class="grey-text text-lighten-2">Metals</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-1" href="products/metals/super-alloy.html">Super Alloy</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metals/aircraft-alloy.html">Aircraft Alloy</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metals/stainless-steel.html">Stainless Steel</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metals/titanium-alloy.html">Titanium Alloy</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metals/aluminum-alloy.html">Aluminum Alloy</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metals/copper-and-bronze-alloy.html">Copper Alloy</a></li>
+            <li><a class="grey-text text-lighten-1" href="products/metals/forging.html">Forging</a></li>                        
+          </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h6 class="grey-text text-lighten-2">Documents <i class="material-icons tiny">picture_as_pdf</i></h6>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-1" href="documents/AEHI_AS9120_6-2022.pdf">ISO9001 with AS9120 <i class="material-icons tiny">file_download</i></a></li>
+            <li><a class="grey-text text-lighten-1" href="documents/AEHI_Inc_FAA_6-2022.pdf">FAA AC 00-56B <i class="material-icons tiny">file_download</i></a></li>
+            <li><a class="grey-text text-lighten-1" href="documents/QD-841-001_Standard_Terms_06-2019.pdf">Standard Purchase Order Terms and Conditions <i class="material-icons tiny">file_download</i></a></li>          
+            <br>
+            <li><a class="grey-text text-lighten-1" href="sitemap.html">Site Map</a> </li>            
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Navigation</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Back to Top</a></li>
-            <li><a class="white-text" href="#!">Our Company</a></li>
-            <li><a class="white-text" href="#!">Products</a></li>
-            <li><a class="white-text" href="#!">Services</a></li>
-          </ul>
-        </div>
+        
       </div>
     </div>
     <div class="footer-copyright grey darken-4">
       <div class="container">
-      <a class="grey-text text-lighten-3" href="#!">©2020 AEHI, Inc. DBA Eagle-High International</a>
+      <div class="row">
+        <div class="col l6 s12">
+          <a class="grey-text text-lighten-1" href="#!">©2010-2020 AEHI, Inc.</a>
+        </div>
+        <div class="col l3 s12"></div>
+        <div class="col l3 s12">
+          <a class="grey-text text-lighten-1" href="#top">Back to Top</a>                   
+        </div>        
+      </div>
+      
       </div>
     </div>
   </footer>
