@@ -1,6 +1,6 @@
 (function($){
   $(function(){
-
+    $('.dropdown-trigger').dropdown();
     $('.sidenav').sidenav();
     $('.parallax').parallax();
 
@@ -9,7 +9,7 @@
       $(".metals-mobile-links").toggle(500);
     });
 
-    $('.dropdown-trigger').dropdown();
+    console.log("ready");
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
