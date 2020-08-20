@@ -15,6 +15,10 @@ address {
   font-style: normal;
 }
 
+table td {
+  font-size: 12px;
+}
+
 nav ul a {
   padding: 0px 20px 0px 20px;
 }
