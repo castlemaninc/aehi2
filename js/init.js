@@ -13,4 +13,5 @@ $( document ).ready(function() {
     $(".metals-mobile-links").toggle(500);
   });
 
+  $('.collapsible').collapsible();
 });

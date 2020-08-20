@@ -132,6 +132,14 @@ a.breadcrumb::before {
     margin: 0 10px;
   }
 
+  table th {
+    font-size: 11px;
+  }
+
+  table td {
+    font-size: 10px;
+  }
+
 }
 
 @media only screen and (min-width: 601px){
