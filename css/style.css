@@ -118,6 +118,10 @@ a.breadcrumb::before {
   line-height: 2rem;
 }
 
+footer a {
+  line-height: 1.8rem;
+}
+
 /* CONTACT FORM */
 
 
@@ -149,6 +153,11 @@ a.breadcrumb::before {
     color: #01579b; 
   }
 
+  /* SITEMAP */
+
+  .sitemap-links li {
+    margin-left: 10px;
+  }
 
 
 @media only screen and (max-width : 992px) {
@@ -190,6 +199,14 @@ a.breadcrumb::before {
     margin: 2px 0px 0px 0px;
   }
 
+  footer a {
+    line-height: 2rem;
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (min-width: 601px){
