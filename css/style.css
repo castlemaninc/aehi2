@@ -133,11 +133,19 @@ a.breadcrumb::before {
   }
 
   table th {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   table td {
     font-size: 10px;
+  }
+
+  .breadcrumb {    
+    font-size: 14px;
+  }
+
+  a.breadcrumb::before {
+    margin: 2px 0px 0px 0px;
   }
 
 }
