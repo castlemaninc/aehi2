@@ -174,50 +174,91 @@ footer a {
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+
+
+@media only screen and (max-width : 760px) {
+    #index-banner .section {
+      top: 0;
+    }
+
+    .main-container {
+      margin: 0 10px;
+    }
+
+    table th {
+      font-size: 14px;
+    }
+
+    table td {
+      font-size: 10px;
+    }
+
+    .breadcrumb {    
+      font-size: 14px;
+    }
+
+    a.breadcrumb::before {
+      margin: 2px 0px 0px 0px;
+    }
+
+    footer a {
+      line-height: 2rem;
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 15px;
+    }  
+}
+
+
+
+@media only screen and (min-width: 601px){
+    .logo-responsive {
+        width: auto;
+        max-height: 64px;
+        margin-left:40px;
+    }  
+}
+
+@media only screen and (max-width: 450px) {
+  footer a {
+    line-height: 2rem;
+    font-size: 16px;
   }
 
-  .main-container {
-    margin: 0 10px;
-  }
-
-  table th {
-    font-size: 14px;
-  }
-
-  table td {
-    font-size: 10px;
+  p {
+    font-size: 16px;
   }
 
   .breadcrumb {    
-    font-size: 14px;
+    font-size: 12px;
   }
 
   a.breadcrumb::before {
     margin: 2px 0px 0px 0px;
   }
 
-  footer a {
-    line-height: 2rem;
-    font-size: 15px;
+  .collapsible-body {
+    padding: 1px;    
   }
 
-  p {
-    font-size: 15px;
+  
+
+  .collapsible th {
+    font-size:11px !important;
+    border: .25px solid lightgray;
   }
+
+  .collapsible td {
+    font-size: 9px !important;
+    padding: 5px .5px !important;
+    border: .25px solid lightgray; 
+  }
+
 }
 
-@media only screen and (min-width: 601px){
-  .logo-responsive {
-      width: auto;
-      max-height: 64px;
-      margin-left:40px;
-  }
-  
-  
-}
+
 
 
 .icon-block {
@@ -230,4 +271,5 @@ footer a {
 footer.page-footer {
   margin: 0;
 }
+
 
