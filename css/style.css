@@ -34,7 +34,15 @@ nav .brand-logo {
 
 .dropdown-content {
   min-width: 130px;
-  width: auto;
+  width: auto;  
+}
+
+.dropdown-content.nested {
+  overflow-y: visible;
+}
+
+.dropdown-content .dropdown-content {
+  margin-left:100%;
 }
 
 .dropdown-content li>a {
@@ -44,7 +52,7 @@ nav .brand-logo {
 
 #metals-arrow-down {
   float: right;
-  margin-right:70%;
+  margin-right:60%;
 }
 
 
@@ -99,6 +107,45 @@ a.breadcrumb::before {
 }
 .parallax-container .section {
   width: 100%;
+}
+
+.image-container {
+  position: relative;   
+}
+
+.page-image {
+  width: 100%;
+  max-width: 680px;  
+  height: auto;  
+}
+
+
+
+.page-image-2 {
+  width: 100%;
+  max-width: 400px;  
+  height: auto;
+}
+
+
+
+.card {
+  position: relative;
+}
+
+.card-title {
+  
+  
+  position: absolute;  
+}
+
+.image-h4-text {
+  position: absolute;
+  bottom: 10%;
+  left: 16px;
+  color: white;
+  opacity: 100%;
+  z-index: 1;   
 }
 
 .logo-responsive {    
