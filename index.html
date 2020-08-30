@@ -16,13 +16,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Materialize CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="js/airplane_engine_animation_2.js"></script>
+
   <!--Google Fonts - Lato and Open Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
-
 </head>
-<body>
-  <!--Navigation-->
+
+
+<!--BODY-->
+<body onload="init();">
+  <!--Navigation-->  
   <nav class="white" role="navigation" id="top">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo"><img src="img/aehi-logo.png" class="logo-responsive"></a>
@@ -56,9 +61,11 @@
         <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
         <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>
         <li><a href="services/value-added-services.html">Value Added Services</a></li>        
-      </ul>
+      </ul>     
 
-      
+    
+    
+    
 
       <ul id="nav-mobile" class="sidenav">
         <img src="img/aehi-inc-logo-large.jpg" class="sidebar-logo">
@@ -94,119 +101,116 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  
 
   <!--Main Section-->
   <section class="row">
-    <div class="main-container">
-      <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br><br>
-            <h1 class="header center blue-text text-lighten-2">Integrated Supplier of Aviation Materials.</h1>
-            <div class="row center">
-              <h5 class="header col s12 light"></h5>
-            </div>
-            <div class="row center">
-              <a href="#!" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">See Products</a>
-            </div>
-            <br><br>
+    
+      
 
-          </div>
-        </div>
-        <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
-      </div>
-
-
+      <!--HERO SECTION-->
       <div class="container">
         <div class="section">
-
-          <!--   Icon Section   -->
           <div class="row">
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center grey-text"><i class="material-icons">airplanemode_active</i></h2>
-                <h5 class="center">Speeds up development</h5>
-
-                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo inventore dolor qui iure voluptatibus, ad obcaecati consequatur id ab ut quas excepturi cupiditate, alias provident similique architecto cumque odit?</p>
-              </div>
-            </div>
-
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center grey-text"><i class="material-icons">group</i></h2>
-                <h5 class="center">User Experience Focused</h5>
-
-                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus iure harum explicabo adipisci necessitatibus deserunt id quo quidem? Fuga omnis vel magnam id dolorum. Quidem ea voluptatem distinctio quo?</p>
-              </div>
-            </div>
-
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center grey-text"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Easy to work with</h5>
-
-                <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique porro fuga, doloribus molestias quos? Optio cupiditate commodi consequuntur voluptatem, molestiae quis, autem veritatis tenetur quo quas praesentium itaque sint.</p>
+            <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00);">
+              <canvas id="canvas" background-color:rgba(255, 255, 255, 0.00);"></canvas>
+              <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; ">
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
-
-
-      <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <div class="row center">
-              <h5 class="header col s12 light">Blah Blah Blah</h5>
-            </div>
           </div>
         </div>
-        <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
       </div>
+      
 
+      <!--OUR COMPANY SECTION-->
       <div class="container">
-        <div class="section">
-          <a id="metals-section"></a>
+        <div class="section">   
+
+          
+          
           <div class="row">
-            <div class="col s12 center">
-              <h3><i class="mdi-content-send brown-text"></i></h3>
-              <a id="metals-section" class="section scrollspy"></a>
-              <h4>Metals</h4>
-              <p class="left-align light">AEHI, Inc. is well recognized around the world as an integrated supplier of aviation materials such as raw and semi-finished metal materials and products, standard hardware, consumables, chemicals as well as composites to the aerospace industry, OEMs, MROs and airlines.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <div class="row center">
-              <h5 class="header col s12 light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolorum esse ex, voluptas repellat quos odio porro labore inventore culpa placeat aliquid voluptate harum atque vero quisquam pariatur sunt adipisci.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="section">
-        
-        <div class="row">
-          <div class="col s12 center">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
             
-            <h4>Services</h4>            
-            <p class="left-align light">AEHI, Inc. is well recognized around the world as an integrated supplier of aviation materials such as raw and semi-finished metal materials and products, standard hardware, consumables, chemicals as well as composites to the aerospace industry, OEMs, MROs and airlines.</p>
+            
+            <div class="col s12 center">              
+              
+              <h4>About Us</h4>
+              <a id="metals-section" class="section scrollspy"></a>                
+              <p class="left-align light">AEHI, Inc. is well recognized around the world as an integrated supplier of aviation materials such as raw and semi-finished metal materials and products, standard hardware, consumables, chemicals as well as composites to the aerospace industry, OEMs, MROs and airlines.</p>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      
+
+      <div class="container">
+        <div class="section">
+          
+          <div class="row">
+            <div class="col s12 center" id="services-section">
+              <div class="col s12 m6">
+                
+              </div>
+              <div class="row">
+                <div class="col s12 m1 l2"></div>
+                <div class="col s12 m4 l2">
+                  <a href="services/value-added-services.html">
+                    
+                    <div class="card-panel blue darken-4 left-align hide-on-small-only" id="fact-card-2">
+                      <h6 class="white-text">Value-Added Services</h6>
+                      <br>
+                      <span class="white-text">AEHI coordinates with our logistic providers to ensure controlled product flow from the point of manufacturing through delivery to the end user.
+                      </span>                    
+                      <p class="right-align white-text"><a href="services/value-added-services.html" class="waves-effect waves-light btn-flat blue darken-2 white-text"><i class="material-icons">chevron_right</i></a></p>                    
+                    </div>
+                    <div class="show-on-small">
+                      <div class="card-panel blue darken-4 left-align hide-on-med-and-up" id="fact-card-2-mobile">
+                        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col s12 m1 l2"></div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
+
+    
+
+      <div class="container">
+        <div class="section">          
+          <div class="row">
+            <div class="col s12 center">                                  
+              <div class="row">                
+                <div class="col s12 m4">
+                  <div class="card z-depth-0">
+                    <div class="card-image">
+                      <img src="img/aircraft-quality.jpg">
+                      
+                      <a href="our-company/quality.html" class="btn-floating halfway-fab waves-effect waves-light light-blue lighten-2 pulse"><i class="material-icons">arrow_forward</i></a>
+                    </div>
+                    <div class="card-content blue darken-4">
+                      <p class="left-align white-text"><b>AEHI, Inc.</b> is committed to the highest level of customer satisfaction</p>
+                      <br>
+                      <span class="card-title white-text left-align">Quality</span>                    
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m8">
+
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
   </section>
 
@@ -296,8 +300,51 @@
   </footer>
 
 
-  <!--  Scripts-->
+  <!--Scripts-->
   
   <script src="js/init.js"></script>
+
+  <!-- Adobe Animate Script-->
+  <script>
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    function init() {
+      canvas = document.getElementById("canvas");
+      anim_container = document.getElementById("animation_container");
+      dom_overlay_container = document.getElementById("dom_overlay_container");
+      var comp=AdobeAn.getComposition("345587308733BD4DB210580B18251525");
+      var lib=comp.getLibrary();
+      var loader = new createjs.LoadQueue(false);
+      loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+      loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+      var lib=comp.getLibrary();
+      loader.loadManifest(lib.properties.manifest);
+    }
+    function handleFileLoad(evt, comp) {
+      var images=comp.getImages();	
+      if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+    }
+    function handleComplete(evt,comp) {
+      //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+      var lib=comp.getLibrary();
+      var ss=comp.getSpriteSheet();
+      var queue = evt.target;
+      var ssMetadata = lib.ssMetadata;
+      for(i=0; i<ssMetadata.length; i++) {
+        ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+      }
+      exportRoot = new lib.RECOVER_airplane_engine_animation_2();
+      stage = new lib.Stage(canvas);	
+      //Registers the "tick" event listener.
+      fnStartAnimation = function() {
+        stage.addChild(exportRoot);
+        createjs.Ticker.framerate = lib.properties.fps;
+        createjs.Ticker.addEventListener("tick", stage);
+      }	    
+      //Code to support hidpi screens and responsive scaling.
+      AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+      AdobeAn.compositionLoaded(lib.properties.id);
+      fnStartAnimation();
+    }
+    </script>
   </body>
 </html>

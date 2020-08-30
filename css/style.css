@@ -2,14 +2,17 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+}
+
 p {
   line-height: 2rem;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Lato', sans-serif;
-}
+/* footer h6 {
+  text-transform: uppercase;
+} */
 
 address {
   font-style: normal;
@@ -99,6 +102,25 @@ a.breadcrumb::before {
   margin: 0 40px 0 40px;
 }
 
+
+#animation_container {
+  width: 100% !important;
+  max-height: 800px;
+  overflow: hidden;
+  height: auto !important;
+}
+
+#canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+#dom_overlay_container {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -108,6 +130,7 @@ a.breadcrumb::before {
 .parallax-container .section {
   width: 100%;
 }
+
 
 .image-container {
   position: relative;   
@@ -119,25 +142,34 @@ a.breadcrumb::before {
   height: auto;  
 }
 
-
-
 .page-image-2 {
   width: 100%;
   max-width: 400px;  
   height: auto;
 }
 
+.card-text-only {
+  height: 100%;
+  width auto;
+}
 
+#services-section {
+  position: relative;
+}
 
+#fact-card-2 {
+  position: absolute;
+  top: -50px;
+}
+
+/*
 .card {
   position: relative;
 }
 
-.card-title {
-  
-  
+.card-title {  
   position: absolute;  
-}
+} */
 
 .image-h4-text {
   position: absolute;
