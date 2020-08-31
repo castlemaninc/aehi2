@@ -108,6 +108,7 @@ a.breadcrumb::before {
   max-height: 800px;
   overflow: hidden;
   height: auto !important;
+  
 }
 
 #canvas {
@@ -118,6 +119,16 @@ a.breadcrumb::before {
 #dom_overlay_container {
   width: 100% !important;
   height: auto !important;
+}
+
+#hero-animation-container {
+  position: relative;
+}
+
+#hero-text {
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
 }
 
 
