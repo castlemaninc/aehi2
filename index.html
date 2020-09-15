@@ -31,13 +31,16 @@
   <nav class="white" role="navigation" id="top">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo"><img src="img/aehi-logo.png" class="logo-responsive"></a>
+      
       <ul class="right hide-on-med-and-down">
         <li><a class='dropdown-trigger' href='#' data-target='our-company-dropdown'>Our Company</a></li>
-        <li><a class='dropdown-trigger' href='#' data-target='products-dropdown' >Products</a></li>        
+        <li><a class='dropdown-trigger' href='#' data-target='products-dropdown' >Products</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='metals-dropdown' >Metals</a></li>        
         <li><a class='dropdown-trigger' href='#' data-target='services-dropdown'>Services</a></li>
-        <li><a href='contact.html'>Contact Us</a></li>       
+        <li><a href='contact.html'>Contact Us</a></li>
+              
       </ul>
-
+      
       <!-- Our Company Dropdown-->
       <ul id='our-company-dropdown' class='dropdown-content'>
         <li><a href="our-company/about-us.html">About Us</a></li>
@@ -46,14 +49,24 @@
       </ul>
 
       <!-- Products Dropdown-->
-      <ul id='products-dropdown' class='dropdown-content'>
-        <li><a href='#metals-section'>Metals</a></li>              
+      <ul id='products-dropdown' class='dropdown-content'>                   
         <li><a href="products/chemicals-and-composites.html">Chemicals & Composites</a></li>
         <li><a href="products/standard-hardware.html">Standard Hardware</a></li>
         <li><a href="products/metallurgical-material.html">Metallurgical Material</a></li>   
         <li><a href="products/honeycomb.html">Honeycomb</a></li>
         <li><a href="products/broaching.html">Broaching</a></li>  
-        <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>             
+        <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>                    
+      </ul>
+
+      <!-- Metals Dropdown-->
+      <ul id='metals-dropdown' class='dropdown-content'>
+        <li><a href="products/metals/super-alloy.html">Super Alloy</a></li>
+        <li><a href="products/metals/aircraft-alloy.html">Aircraft Alloy</a></li>
+        <li><a href="products/metals/stainless-steel.html">Stainless Steel</a></li>
+        <li><a href="products/metals/titanium-alloy.html">Titanium Alloy</a></li>
+        <li><a href="products/metals/aluminum-alloy.html">Aluminum Alloy</a></li>
+        <li><a href="products/metals/copper-and-bronze-alloy.html">Copper Alloy</a></li>
+        <li><a href="products/metals/forging.html">Forging</a></li>        
       </ul>
 
       <!-- Services Dropdown-->
@@ -61,14 +74,12 @@
         <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
         <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>
         <li><a href="services/value-added-services.html">Value Added Services</a></li>        
-      </ul>     
-
+      </ul>          
     
-    
-    
-
+      <!--MOBILE SIDENAV-->      
       <ul id="nav-mobile" class="sidenav">
-        <img src="img/aehi-inc-logo-large.jpg" class="sidebar-logo">
+            <img src="img/aehi-inc-logo-large.jpg" class="sidebar-logo sidenav-close">
+        
             <h5 id="our-company-h5" class="grey-text text-darken-2">Our Company</h5>                
                 <li><a href="our-company/about-us.html">About Us</a></li>
                 <li><a href="our-company/management.html">Management</a></li>
@@ -97,7 +108,10 @@
                 <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
                 <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>                  
                 <li><a href="services/value-added-services.html">Value Added Services</a></li>
+            
+            <li><a href="contact.html" class="waves-effect waves-light btn-small light-blue lighten-2">Contact Us</a></li> 
       </ul>
+      <!--MOBILE SIDENAV END-->
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
@@ -126,16 +140,9 @@
 
       <!--OUR COMPANY SECTION-->
       <div class="container">
-        <div class="section">   
-
-          
-          
-          <div class="row">
-            
-            
-            <div class="col s12 left-align">             
-              
-                            
+        <div class="section">
+          <div class="row">            
+            <div class="col s12 left-align">                           
               <h4 class="left-align light"><a href="our-company/about-us.html">AEHI, Inc.</a> is well recognized around the world as an integrated supplier of aviation materials such as raw and semi-finished metal materials and products, standard hardware, consumables, chemicals as well as composites to the aerospace industry, OEMs, MROs and airlines.</h4>
               <br>
               <a href="our-company/about-us.html" class="waves-effect waves-light btn-large red darken-4">About Us</a>
@@ -145,76 +152,7 @@
         </div>
       </div>
 
-      <!--PRODUCTS SECTION-->
-      <div class="container">
-        <div class="section">   
-
           
-          
-          <div class="row">
-            
-            
-            <div class="col s12 left-align">              
-              <h5>Metals</h5>               
-              <div class="nav-content blue-grey darken-2">
-                <ul class="tabs tabs-transparent">
-                  <li class="tab"><a href="#test1">Super Alloy</a></li>
-                  <li class="tab"><a href="#test2">Aircraft Alloy</a></li>
-                  <li class="tab"><a href="#test2">Stainless Steel</a></li>
-                  <li class="tab"><a href="#test2">Titanium Alloy</a></li>                                
-                </ul>
-              </div>
-              <div class="nav-content blue-grey darken-3">
-                <ul class="tabs tabs-transparent">                  
-                  <li class="tab"><a href="#test2">Aluminum Alloy</a></li>
-                  <li class="tab"><a href="#test2">Copper & Bronze</a></li>
-                  <li class="tab"><a href="#test2">Aircraft Alloy</a></li>
-                  <li class="tab"><a href="#test2">Forging</a></li>                  
-                </ul>
-              </div>
-              <a id="metals-section" class="section scrollspy"></a> 
-            </div>
-          </div>
-
-        </div>
-      </div>
-      
-
-      <div class="container">
-        <div class="section">
-          
-          <div class="row">
-            <div class="col s12 center" id="services-section">
-              <div class="col s12 m6">
-                
-              </div>
-              <div class="row">
-                
-                <!--<div class="col s12 m1 l2"></div>
-                <div class="col s12 m4 l2">
-                  <a href="services/value-added-services.html">
-                    
-                    <div class="card-panel blue darken-4 left-align hide-on-small-only" id="fact-card-2">
-                      <h6 class="white-text">Value-Added Services</h6>
-                      <br>
-                      <span class="white-text">AEHI coordinates with our logistic providers to ensure controlled product flow from the point of manufacturing through delivery to the end user.
-                      </span>                    
-                      <p class="right-align white-text"><a href="services/value-added-services.html" class="waves-effect waves-light btn-flat blue darken-2 white-text"><i class="material-icons">chevron_right</i></a></p>                    
-                    </div>
-                    <div class="show-on-small">
-                      <div class="card-panel blue darken-4 left-align hide-on-med-and-up" id="fact-card-2-mobile">
-                        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col s12 m1 l2"></div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
     
       <!--SERVICES SECTION-->
@@ -223,10 +161,7 @@
           <div class="row">
             <div class="col s12 center">                                  
               <div class="row">
-                <div class="col s12 m4">                  
-                            
-                  
-                </div>
+                
                 <div class="col s12 m4">
                   <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -259,7 +194,22 @@
                     </div>
                   </div>
                 </div>
-                
+                <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/aircraft-quality.jpg">
+                      
+                      <a href="our-company/quality.html" class="btn-floating halfway-fab waves-effect waves-light light-blue lighten-2 pulse"><i class="material-icons">arrow_forward</i></a>
+                    </div>
+                    <div class="card-content blue darken-4">
+                      
+                      <p class="left-align white-text"><b>AEHI, Inc.</b> is committed to the highest level of customer satisfaction</p>
+                      <br>
+                      <span class="card-title white-text left-align">Quality</span>
+                                          
+                    </div>
+                  </div>
+                </div>
 
                 </div>                
               </div>

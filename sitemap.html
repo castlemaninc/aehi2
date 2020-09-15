@@ -23,16 +23,20 @@
 </head>
 <body>
   <!--Navigation-->
+  <!--Navigation-->  
   <nav class="white" role="navigation" id="top">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo"><img src="img/aehi-logo.png" class="logo-responsive"></a>
+      
       <ul class="right hide-on-med-and-down">
         <li><a class='dropdown-trigger' href='#' data-target='our-company-dropdown'>Our Company</a></li>
-        <li><a class='dropdown-trigger' href='#' data-target='products-dropdown'>Products</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='products-dropdown' >Products</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='metals-dropdown' >Metals</a></li>        
         <li><a class='dropdown-trigger' href='#' data-target='services-dropdown'>Services</a></li>
-        <li><a href='contact.html'>Contact Us</a></li>       
+        <li><a href='contact.html'>Contact Us</a></li>
+              
       </ul>
-
+      
       <!-- Our Company Dropdown-->
       <ul id='our-company-dropdown' class='dropdown-content'>
         <li><a href="our-company/about-us.html">About Us</a></li>
@@ -41,14 +45,24 @@
       </ul>
 
       <!-- Products Dropdown-->
-      <ul id='products-dropdown' class='dropdown-content'>
-        <li><a href="#!">Metals</a></li>
+      <ul id='products-dropdown' class='dropdown-content'>                   
         <li><a href="products/chemicals-and-composites.html">Chemicals & Composites</a></li>
         <li><a href="products/standard-hardware.html">Standard Hardware</a></li>
         <li><a href="products/metallurgical-material.html">Metallurgical Material</a></li>   
         <li><a href="products/honeycomb.html">Honeycomb</a></li>
         <li><a href="products/broaching.html">Broaching</a></li>  
-        <li><a href="cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>             
+        <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>                    
+      </ul>
+
+      <!-- Metals Dropdown-->
+      <ul id='metals-dropdown' class='dropdown-content'>
+        <li><a href="products/metals/super-alloy.html">Super Alloy</a></li>
+        <li><a href="products/metals/aircraft-alloy.html">Aircraft Alloy</a></li>
+        <li><a href="products/metals/stainless-steel.html">Stainless Steel</a></li>
+        <li><a href="products/metals/titanium-alloy.html">Titanium Alloy</a></li>
+        <li><a href="products/metals/aluminum-alloy.html">Aluminum Alloy</a></li>
+        <li><a href="products/metals/copper-and-bronze-alloy.html">Copper Alloy</a></li>
+        <li><a href="products/metals/forging.html">Forging</a></li>        
       </ul>
 
       <!-- Services Dropdown-->
@@ -56,17 +70,18 @@
         <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
         <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>
         <li><a href="services/value-added-services.html">Value Added Services</a></li>        
-      </ul>
-
+      </ul>          
+    
+      <!--MOBILE SIDENAV-->      
       <ul id="nav-mobile" class="sidenav">
-        <img src="img/aehi-inc-logo-large.jpg" class="sidebar-logo">
-            <h5 id="our-company-h5" class="grey-text text-darken-2">Our Company</h5>
-                
+            <img src="img/aehi-inc-logo-large.jpg" class="sidebar-logo sidenav-close">
+        
+            <h5 id="our-company-h5" class="grey-text text-darken-2">Our Company</h5>                
                 <li><a href="our-company/about-us.html">About Us</a></li>
                 <li><a href="our-company/management.html">Management</a></li>
                 <li><a href="our-company/quality.html">Quality</a></li>
-            <h5 id="products-h5" class="grey-text text-darken-2">Products</h5>
-                
+
+            <h5 id="products-h5" class="grey-text text-darken-2">Products</h5>                
                 <li><a href="#!" id="metals-link-mobile">Metals <i class="small material-icons" id="metals-arrow-down">keyboard_arrow_down</i></a></li>
                     <ul class="metals-mobile-links">
                         <li><a href="products/metals/super-alloy.html">Super Alloy</a></li>
@@ -76,7 +91,7 @@
                         <li><a href="products/metals/aluminum-alloy.html">Aluminum Alloy</a></li>
                         <li><a href="products/metals/copper-and-bronze-alloy.html">Copper Alloy</a></li>
                         <li><a href="products/metals/forging.html">Forging</a></li>
-                    </ul>                 
+                    </ul>            
                                 
                 <li><a href="products/chemicals-and-composites.html">Chemicals & Composites</a></li>                    
                 <li><a href="products/standard-hardware.html">Standard Hardware</a></li>
@@ -84,12 +99,15 @@
                 <li><a href="products/honeycomb.html">Honeycomb</a></li>
                 <li><a href="products/broaching.html">Broaching</a></li>
                 <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>
-            <h5 id="services-h5" class="grey-text text-darken-2">Services</h5>
-                
+
+            <h5 id="services-h5" class="grey-text text-darken-2">Services</h5>                
                 <li><a href="services/supply-chain-management.html">Supply Chain Management</a></li>
                 <li><a href="services/custom-machining-services.html">Custom Machining Services</a></li>                  
                 <li><a href="services/value-added-services.html">Value Added Services</a></li>
+            
+            <li><a href="contact.html" class="waves-effect waves-light btn-small light-blue lighten-2">Contact Us</a></li> 
       </ul>
+      <!--MOBILE SIDENAV END-->
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>

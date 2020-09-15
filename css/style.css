@@ -161,7 +161,7 @@ a.breadcrumb::before {
 
 .card-text-only {
   height: 100%;
-  width auto;
+  width: auto;
 }
 
 #services-section {
