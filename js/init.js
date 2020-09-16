@@ -10,10 +10,14 @@ $( document ).ready(function() {
   
   
   $(".metals-mobile-links").hide();
+  $(".metals-links").hide();
+
+
 
   $("#metals-link-mobile").click(function(){
-    $(".metals-mobile-links").toggle(500);
+    $(".metals-mobile-links").toggle(500);    
   });
+
   
 
   $('.collapsible').collapsible();

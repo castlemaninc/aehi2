@@ -204,6 +204,12 @@ a.breadcrumb::before {
   margin-top: 10px;
 }
 
+#worldwide-img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
 .contact-details {
   margin-top: 40px;
   font-size: 12px;
@@ -366,5 +372,4 @@ footer a {
 footer.page-footer {
   margin: 0;
 }
-
 
