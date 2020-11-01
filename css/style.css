@@ -125,13 +125,14 @@ a.breadcrumb::before {
   position: relative;
 }
 
+/*
 #_preload_div_ {
   position: absolute;
   top: 50%;
   left: 48%;  
 }
 
-
+*/
 
 #hero-text {
   position: absolute;
@@ -294,11 +295,12 @@ footer a {
     margin: 0 20px;
   }
 
+  /*
   .pre_loader_gif {
     width: 44px;
     height:44px;
   }
-
+  */
   
 }
 
@@ -338,11 +340,12 @@ footer a {
       font-size: 15px;
     }
     
+    /*
     .pre_loader_gif {
       width: 32px;
       height: 32px;
     }
-    
+    */
 }
 
 
