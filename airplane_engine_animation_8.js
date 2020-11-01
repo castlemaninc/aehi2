@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"airplane_engine_animation_7_atlas_1", frames: [[0,0,1920,1080]]},
-		{name:"airplane_engine_animation_7_atlas_2", frames: [[0,0,1714,1080],[0,1082,350,350]]}
+		{name:"airplane_engine_animation_8_atlas_1", frames: [[0,0,1920,1080]]},
+		{name:"airplane_engine_animation_8_atlas_2", frames: [[0,0,1714,1080],[0,1082,350,350]]}
 ];
 
 
@@ -29,21 +29,21 @@ lib.ssMetadata = [
 
 
 (lib.AirplaneCutout = function() {
-	this.initialize(ss["airplane_engine_animation_7_atlas_2"]);
+	this.initialize(ss["airplane_engine_animation_8_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.EngineTurbine2 = function() {
-	this.initialize(ss["airplane_engine_animation_7_atlas_2"]);
+	this.initialize(ss["airplane_engine_animation_8_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Sky = function() {
-	this.initialize(ss["airplane_engine_animation_7_atlas_1"]);
+	this.initialize(ss["airplane_engine_animation_8_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -130,8 +130,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/airplane_engine_animation_7_atlas_1.png", id:"airplane_engine_animation_7_atlas_1"},
-		{src:"images/airplane_engine_animation_7_atlas_2.png", id:"airplane_engine_animation_7_atlas_2"}
+		{src:"images/airplane_engine_animation_8_atlas_1.png", id:"airplane_engine_animation_8_atlas_1"},
+		{src:"images/airplane_engine_animation_8_atlas_2.png", id:"airplane_engine_animation_8_atlas_2"}
 	],
 	preloads: []
 };
