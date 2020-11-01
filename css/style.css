@@ -218,6 +218,16 @@ a.breadcrumb::before {
   max-width: 300px;
 }
 
+.globe {
+  max-width: 50%;
+  shape-outside: circle(45%);
+  float: left;
+}
+
+.globe-text {
+  line-height: 2.5rem;
+}
+
 .contact-details {
   margin-top: 40px;
   font-size: 12px;
@@ -230,6 +240,8 @@ a.breadcrumb::before {
 footer a {
   line-height: 1.8rem;
 }
+
+
 
 /* CONTACT FORM */
 
@@ -398,12 +410,3 @@ footer.page-footer {
   margin: 0;
 }
 
-.globe {
-  max-width: 50%;
-  shape-outside: circle(45%);
-  float: left;
-}
-
-.globe-text {
-  line-height: 2.5rem;
-}
