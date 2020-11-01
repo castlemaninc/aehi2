@@ -3,12 +3,14 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"airplane_engine_animation_2_atlas_1", frames: [[0,0,1920,1080],[0,1082,350,350]]}
+		{name:"airplane_engine_animation_5_atlas_1", frames: [[0,0,1920,1080]]},
+		{name:"airplane_engine_animation_5_atlas_2", frames: [[0,0,1714,1080],[0,1082,350,350]]}
 ];
 
 
 (lib.AnMovieClip = function(){
 	this.actionFrames = [];
+	this.ignorePause = false;
 	this.gotoAndPlay = function(positionOrLabel){
 		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
 	}
@@ -26,16 +28,23 @@ lib.ssMetadata = [
 
 
 
-(lib.AEHIAirplaneEngineAnimationLayers_0000_AirplaneCutout = function() {
-	this.initialize(ss["airplane_engine_animation_2_atlas_1"]);
+(lib.AirplaneCutout = function() {
+	this.initialize(ss["airplane_engine_animation_5_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.EngineTurbine2 = function() {
-	this.initialize(ss["airplane_engine_animation_2_atlas_1"]);
+	this.initialize(ss["airplane_engine_animation_5_atlas_2"]);
 	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Sky = function() {
+	this.initialize(ss["airplane_engine_animation_5_atlas_1"]);
+	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -54,50 +63,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
-
-
-(lib.Symbol1 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.instance = new lib.AEHIAirplaneEngineAnimationLayers_0000_AirplaneCutout();
-	this.instance.setTransform(0,0,0.5085,0.5085);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Symbol1, new cjs.Rectangle(0,0,976.3,549.2), null);
-
-
-(lib.EngineTurbine2_1 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.instance = new lib.EngineTurbine2();
-	this.instance.setTransform(-101,-101,0.5771,0.5771);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.EngineTurbine2_1, new cjs.Rectangle(-101,-101,202,202), null);
 
 
 (lib.enginesymbol = function(mode,startPosition,loop,reversed) {
@@ -123,7 +88,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.RECOVER_airplane_engine_animation_2 = function(mode,startPosition,loop,reversed) {
+(lib.RECOVER_airplane_engine_animation_3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -134,29 +99,28 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Aircraft
-	this.instance = new lib.Symbol1();
-	this.instance.setTransform(488.2,274.6,1,1,0,0,0,488.2,274.6);
+	// aircraft
+	this.instance = new lib.AirplaneCutout();
+	this.instance.setTransform(0,-3,0.5023,0.5023);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(70));
 
-	// Layer_4
+	// turbine
 	this.instance_1 = new lib.enginesymbol();
-	this.instance_1.setTransform(325,383);
+	this.instance_1.setTransform(321,372);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({rotation:-5.2174},0).wait(1).to({rotation:-10.4348},0).wait(1).to({rotation:-15.6522},0).wait(1).to({rotation:-20.8696},0).wait(1).to({rotation:-26.087},0).wait(1).to({rotation:-31.3043},0).wait(1).to({rotation:-36.5217},0).wait(1).to({rotation:-41.7391},0).wait(1).to({rotation:-46.9565},0).wait(1).to({rotation:-52.1739},0).wait(1).to({rotation:-57.3913},0).wait(1).to({rotation:-62.6087},0).wait(1).to({rotation:-67.8261},0).wait(1).to({rotation:-73.0435},0).wait(1).to({rotation:-78.2609},0).wait(1).to({rotation:-83.4783},0).wait(1).to({rotation:-88.6957},0).wait(1).to({rotation:-93.913},0).wait(1).to({rotation:-99.1304},0).wait(1).to({rotation:-104.3478},0).wait(1).to({rotation:-109.5652},0).wait(1).to({rotation:-114.7826},0).wait(1).to({rotation:-120},0).wait(1).to({rotation:-125.2174},0).wait(1).to({rotation:-130.4348},0).wait(1).to({rotation:-135.6522},0).wait(1).to({rotation:-140.8696},0).wait(1).to({rotation:-146.087},0).wait(1).to({rotation:-151.3043},0).wait(1).to({rotation:-156.5217},0).wait(1).to({rotation:-161.7391},0).wait(1).to({rotation:-166.9565},0).wait(1).to({rotation:-172.1739},0).wait(1).to({rotation:-177.3913},0).wait(1).to({rotation:-182.6087},0).wait(1).to({rotation:-187.8261},0).wait(1).to({rotation:-193.0435},0).wait(1).to({rotation:-198.2609},0).wait(1).to({rotation:-203.4783},0).wait(1).to({rotation:-208.6957},0).wait(1).to({rotation:-213.913},0).wait(1).to({rotation:-219.1304},0).wait(1).to({rotation:-224.3478},0).wait(1).to({rotation:-229.5652},0).wait(1).to({rotation:-234.7826},0).wait(1).to({rotation:-240},0).wait(1).to({rotation:-245.2174},0).wait(1).to({rotation:-250.4348},0).wait(1).to({rotation:-255.6522},0).wait(1).to({rotation:-260.8696},0).wait(1).to({rotation:-266.087},0).wait(1).to({rotation:-271.3043},0).wait(1).to({rotation:-276.5217},0).wait(1).to({rotation:-281.7391},0).wait(1).to({rotation:-286.9565},0).wait(1).to({rotation:-292.1739},0).wait(1).to({rotation:-297.3913},0).wait(1).to({rotation:-302.6087},0).wait(1).to({rotation:-307.8261},0).wait(1).to({rotation:-313.0435},0).wait(1).to({rotation:-318.2609},0).wait(1).to({rotation:-323.4783},0).wait(1).to({rotation:-328.6957},0).wait(1).to({rotation:-333.913},0).wait(1).to({rotation:-339.1304},0).wait(1).to({rotation:-344.3478},0).wait(1).to({rotation:-349.5652},0).wait(1).to({rotation:-354.7826},0).wait(1).to({rotation:-360},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({rotation:-5.2174},0).wait(1).to({rotation:-10.4348},0).wait(1).to({rotation:-15.6522},0).wait(1).to({rotation:-20.8696},0).wait(1).to({rotation:-26.087},0).wait(1).to({rotation:-31.3043},0).wait(1).to({rotation:-36.5217},0).wait(1).to({rotation:-41.7391},0).wait(1).to({rotation:-46.9565},0).wait(1).to({rotation:-52.1739},0).wait(1).to({rotation:-57.3913},0).wait(1).to({rotation:-62.6087},0).wait(1).to({rotation:-67.8261},0).wait(1).to({rotation:-73.0435},0).wait(1).to({rotation:-78.2609},0).wait(1).to({rotation:-83.4783},0).wait(1).to({rotation:-88.6957},0).wait(1).to({rotation:-93.913},0).wait(1).to({rotation:-99.1304},0).wait(1).to({rotation:-104.3478},0).wait(1).to({rotation:-109.5652},0).wait(1).to({rotation:-114.7826},0).wait(1).to({rotation:-120},0).wait(1).to({rotation:-125.2174},0).wait(1).to({rotation:-130.4348},0).wait(1).to({rotation:-135.6522},0).wait(1).to({rotation:-140.8696},0).wait(1).to({rotation:-146.087},0).wait(1).to({rotation:-151.3043},0).wait(1).to({rotation:-156.5217},0).wait(1).to({rotation:-161.7391},0).wait(1).to({rotation:-166.9565},0).wait(1).to({rotation:-172.1739},0).wait(1).to({rotation:-177.3913},0).wait(1).to({rotation:-182.6087},0).wait(1).to({rotation:-187.8261},0).wait(1).to({rotation:-193.0435},0).wait(1).to({rotation:-198.2609},0).wait(1).to({rotation:-203.4783},0).wait(1).to({rotation:-208.6956},0).wait(1).to({rotation:-213.913},0).wait(1).to({rotation:-219.1304},0).wait(1).to({rotation:-224.3478},0).wait(1).to({rotation:-229.5652},0).wait(1).to({rotation:-234.7826},0).wait(1).to({rotation:-240},0).wait(1).to({rotation:-245.2174},0).wait(1).to({rotation:-250.4348},0).wait(1).to({rotation:-255.6522},0).wait(1).to({rotation:-260.8696},0).wait(1).to({rotation:-266.087},0).wait(1).to({rotation:-271.3043},0).wait(1).to({rotation:-276.5217},0).wait(1).to({rotation:-281.7391},0).wait(1).to({rotation:-286.9565},0).wait(1).to({rotation:-292.1739},0).wait(1).to({rotation:-297.3913},0).wait(1).to({rotation:-302.6087},0).wait(1).to({rotation:-307.8261},0).wait(1).to({rotation:-313.0435},0).wait(1).to({rotation:-318.2609},0).wait(1).to({rotation:-323.4783},0).wait(1).to({rotation:-328.6957},0).wait(1).to({rotation:-333.913},0).wait(1).to({rotation:-339.1304},0).wait(1).to({rotation:-344.3478},0).wait(1).to({rotation:-349.5652},0).wait(1).to({rotation:-354.7826},0).wait(1).to({rotation:-360},0).wait(1));
 
-	// Turbine
-	this.instance_2 = new lib.EngineTurbine2_1();
-	this.instance_2.setTransform(326,383);
-	this.instance_2._off = true;
+	// sky
+	this.instance_2 = new lib.Sky();
+	this.instance_2.setTransform(0,1,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(69).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(70));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(480,270,496.29999999999995,279.20000000000005);
+p.nominalBounds = new cjs.Rectangle(480,267,480,274);
 // library properties:
 lib.properties = {
 	id: '345587308733BD4DB210580B18251525',
@@ -164,9 +128,10 @@ lib.properties = {
 	height: 540,
 	fps: 24,
 	color: "#FFFFFF",
-	opacity: 0.00,
+	opacity: 1.00,
 	manifest: [
-		{src:"images/airplane_engine_animation_2_atlas_1.png", id:"airplane_engine_animation_2_atlas_1"}
+		{src:"images/airplane_engine_animation_5_atlas_1.png", id:"airplane_engine_animation_5_atlas_1"},
+		{src:"images/airplane_engine_animation_5_atlas_2.png", id:"airplane_engine_animation_5_atlas_2"}
 	],
 	preloads: []
 };
@@ -263,7 +228,7 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 an.handleSoundStreamOnTick = function(event) {
 	if(!event.paused){
 		var stageChild = stage.getChildAt(0);
-		if(!stageChild.paused){
+		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
 		}
 	}

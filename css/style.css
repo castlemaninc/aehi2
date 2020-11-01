@@ -125,6 +125,14 @@ a.breadcrumb::before {
   position: relative;
 }
 
+#_preload_div_ {
+  position: absolute;
+  top: 50%;
+  left: 48%;  
+}
+
+
+
 #hero-text {
   position: absolute;
   bottom: 50%;
@@ -273,6 +281,13 @@ footer a {
   .main-container {
     margin: 0 20px;
   }
+
+  .pre_loader_gif {
+    width: 44px;
+    height:44px;
+  }
+
+  
 }
 
 
@@ -309,7 +324,13 @@ footer a {
 
     p {
       font-size: 15px;
-    }  
+    }
+    
+    .pre_loader_gif {
+      width: 32px;
+      height: 32px;
+    }
+    
 }
 
 
@@ -319,7 +340,9 @@ footer a {
         width: auto;
         max-height: 64px;
         margin-left:40px;
-    }  
+    }
+    
+    
 }
 
 @media only screen and (max-width: 450px) {
@@ -354,8 +377,10 @@ footer a {
   .collapsible td {
     font-size: 9px !important;
     padding: 5px .5px !important;
-    border: .25px solid lightgray; 
+    border: .25px solid lightgray;    
   }
+
+  
 
 }
 
