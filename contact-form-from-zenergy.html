@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <title>Contact Us</title>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <div class="row">
+            <div class="col l12">
+                <div class="hello2"></div>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col s3 m3 l5"></div>
+        <div class="col s6 m6 l2"><a href="index.html"><img src="img/zenergy_logo_3.png"></a></div>
+        <div class="col s3 m3 l5"></div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col s3 m3 l4"></div>
+        <div class="col s6 m6 l4">Email: <a href="mailto:sales@zenergysupply.com">sales@zenergysupply.com</a></div>
+        <div class="col s3 m3 l4"></div>
+    </div>
+    
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <div class="row field">        
+        <div class="col s1 m3 l4"></div>
+        <div class="col s10 m6 l4" id="contactform">            
+            <div class="input-field col s12 m12 l12 field">
+                <i class="material-icons prefix">account_circle</i>
+                <input type="text" id="Name" name="Name" class="validate" required>
+                <label for="Name" class="fcf-label">Full Name</label>
+            </div>
+            <div class="input-field col s12 m12 l12 field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="Email" name="Email" class="validate" required>
+                <label for="Email">Email Address</label>
+            </div>
+            <div class="input-field col s12 field">
+                <i class="material-icons prefix">message</i>
+                <textarea id="Message" name="Message" class="materialize-textarea" required></textarea>
+                <label for="Message">Message</label>                
+            </div>
+            
+            <div class="col s12 m12 l12 field">
+                <button id="fcf-button" class="btn waves-effect waves-light green darken4" type="submit">Submit
+                <i class="material-icons right">send</i>
+                </button>
+            </div>
+            <div class="col s12 m12 l12 form-error-message">
+                <div class="col s12 m12 l12" id="form-messages"></div>
+            </div>           
+        </div>        
+    </form>
+         
+    </div>
+        
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    
+  </body>
+</html>
